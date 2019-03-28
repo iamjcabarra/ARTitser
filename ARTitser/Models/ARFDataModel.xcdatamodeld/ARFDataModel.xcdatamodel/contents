@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17E199" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Activity" representedClassName="Activity" syncable="YES" codeGenerationType="class">
+        <attribute name="activity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="module" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="Class" representedClassName="Class" syncable="YES" codeGenerationType="class">
+        <attribute name="aClassDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="creatorId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="creatorName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="playerNames" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="schedule" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="searchString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="venue" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="course" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ClassCourse" inverseName="aClass" inverseEntity="ClassCourse" syncable="YES"/>
+        <relationship name="creator" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ClassCreator" inverseName="aClass" inverseEntity="ClassCreator" syncable="YES"/>
+        <relationship name="players" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ClassPlayer" inverseName="aClass" inverseEntity="ClassPlayer" syncable="YES"/>
+    </entity>
+    <entity name="ClassCourse" representedClassName="ClassCourse" syncable="YES" codeGenerationType="class">
+        <attribute name="classId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unit" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="aClass" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Class" inverseName="course" inverseEntity="Class" syncable="YES"/>
+    </entity>
+    <entity name="ClassCreator" representedClassName="ClassCreator" syncable="YES" codeGenerationType="class">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="birthdate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="classId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="encryptedPassword" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="encryptedUsername" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="middleName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mobile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="aClass" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Class" inverseName="creator" inverseEntity="Class" syncable="YES"/>
+    </entity>
+    <entity name="ClassPlayer" representedClassName="ClassPlayer" syncable="YES" codeGenerationType="class">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="birthdate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="classId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="encryptedPassword" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="encryptedUsername" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="middleName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mobile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="aClass" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Class" inverseName="players" inverseEntity="Class" syncable="YES"/>
+    </entity>
+    <entity name="Clue" representedClassName="Clue" syncable="YES" codeGenerationType="class">
+        <attribute name="clue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="locationName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="points" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="pointsOnAttempts" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="riddle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="searchString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="choices" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ClueChoice" inverseName="clue" inverseEntity="ClueChoice" syncable="YES"/>
+    </entity>
+    <entity name="ClueChoice" representedClassName="ClueChoice" syncable="YES" codeGenerationType="class">
+        <attribute name="answer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="choiceStatement" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="clueId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="encryptedAnswer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isCaseSensitive" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isCorrect" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="clue" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Clue" inverseName="choices" inverseEntity="Clue" syncable="YES"/>
+    </entity>
+    <entity name="Course" representedClassName="Course" syncable="YES" codeGenerationType="class">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="searchString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unit" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="DeepCopyClass" representedClassName="DeepCopyClass" syncable="YES" codeGenerationType="class">
+        <attribute name="aClassDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="creatorId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="creatorName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="playerIds" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="schedule" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="searchString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="venue" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="deepCopyCourse" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DeepCopyClassCourse" inverseName="deepCopyClass" inverseEntity="DeepCopyClassCourse" syncable="YES"/>
+        <relationship name="deepCopyCreator" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DeepCopyClassCreator" inverseName="deepCopyClass" inverseEntity="DeepCopyClassCreator" syncable="YES"/>
+        <relationship name="deepCopyPlayers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DeepCopyClassPlayer" inverseName="deepCopyClass" inverseEntity="DeepCopyClassPlayer" syncable="YES"/>
+    </entity>
+    <entity name="DeepCopyClassCourse" representedClassName="DeepCopyClassCourse" syncable="YES" codeGenerationType="class">
+        <attribute name="classId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unit" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="deepCopyClass" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DeepCopyClass" inverseName="deepCopyCourse" inverseEntity="DeepCopyClass" syncable="YES"/>
+    </entity>
+    <entity name="DeepCopyClassCreator" representedClassName="DeepCopyClassCreator" syncable="YES" codeGenerationType="class">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="birthdate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="classId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="encryptedPassword" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="encryptedUsername" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="middleName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mobile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="deepCopyClass" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DeepCopyClass" inverseName="deepCopyCreator" inverseEntity="DeepCopyClass" syncable="YES"/>
+    </entity>
+    <entity name="DeepCopyClassPlayer" representedClassName="DeepCopyClassPlayer" syncable="YES" codeGenerationType="class">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="birthdate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="classId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="encryptedPassword" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="encryptedUsername" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="middleName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mobile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="deepCopyClass" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DeepCopyClass" inverseName="deepCopyPlayers" inverseEntity="DeepCopyClass" syncable="YES"/>
+    </entity>
+    <entity name="DeepCopyClue" representedClassName="DeepCopyClue" syncable="YES" codeGenerationType="class">
+        <attribute name="choices" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="clue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="locationName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="points" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="pointsOnAttempts" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pointsOnAttemptsFormatted" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="riddle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="searchString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="deepCopyClueChoices" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DeepCopyClueChoice" inverseName="deepCopyClue" inverseEntity="DeepCopyClueChoice" syncable="YES"/>
+    </entity>
+    <entity name="DeepCopyClueChoice" representedClassName="DeepCopyClueChoice" syncable="YES" codeGenerationType="class">
+        <attribute name="answer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="choiceStatement" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="clueId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="encryptedAnswer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isCaseSensitive" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isCorrect" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="deepCopyClue" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DeepCopyClue" inverseName="deepCopyClueChoices" inverseEntity="DeepCopyClue" syncable="YES"/>
+    </entity>
+    <entity name="DeepCopyCourse" representedClassName="DeepCopyCourse" syncable="YES" codeGenerationType="class">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="searchString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unit" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="DeepCopyGame" representedClassName="DeepCopyGame" syncable="YES" codeGenerationType="class">
+        <attribute name="clueIds" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="discussion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="encryptedSecurityCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="end" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isNoExpiration" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isSecure" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isTimeBound" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="minutes" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="searchString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="securityCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="start" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="startingClueId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="startingClueName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="totalPoints" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="treasureId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="treasureName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="treasurePoints" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="deepCopyGameClues" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DeepCopyGameClue" inverseName="deepCopyGame" inverseEntity="DeepCopyGameClue" syncable="YES"/>
+        <relationship name="deepCopyGameTreasure" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DeepCopyGameTreasure" inverseName="deepCopyGame" inverseEntity="DeepCopyGameTreasure" syncable="YES"/>
+    </entity>
+    <entity name="DeepCopyGameClue" representedClassName="DeepCopyGameClue" syncable="YES" codeGenerationType="class">
+        <attribute name="clue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="gameId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="locationName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="points" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="pointsOnAttempts" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="riddle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="deepCopyGame" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DeepCopyGame" inverseName="deepCopyGameClues" inverseEntity="DeepCopyGame" syncable="YES"/>
+        <relationship name="deepCopyGameClueChoices" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DeepCopyGameClueChoice" inverseName="deepCopyGameClue" inverseEntity="DeepCopyGameClueChoice" syncable="YES"/>
+    </entity>
+    <entity name="DeepCopyGameClueChoice" representedClassName="DeepCopyGameClueChoice" syncable="YES" codeGenerationType="class">
+        <attribute name="answer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="choiceStatement" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="clueId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="encryptedAnswer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gameId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isCaseSensitive" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isCorrect" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="deepCopyGameClue" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DeepCopyGameClue" inverseName="deepCopyGameClueChoices" inverseEntity="DeepCopyGameClue" syncable="YES"/>
+    </entity>
+    <entity name="DeepCopyGameTreasure" representedClassName="DeepCopyGameTreasure" syncable="YES" codeGenerationType="class">
+        <attribute name="claimingAnswers" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="claimingQuestion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="encryptedClaimingAnswers" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gameId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="imageLocalName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isCaseSensitive" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="locationName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="model3dLocalName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model3dUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="points" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="treasureDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="deepCopyGame" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DeepCopyGame" inverseName="deepCopyGameTreasure" inverseEntity="DeepCopyGame" syncable="YES"/>
+    </entity>
+    <entity name="DeepCopySidekick" representedClassName="DeepCopySidekick" syncable="YES" codeGenerationType="class">
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="level" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ownedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="points" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="DeepCopyTreasure" representedClassName="DeepCopyTreasure" syncable="YES" codeGenerationType="class">
+        <attribute name="claimingAnswers" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="claimingQuestion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="encryptedClaimingAnswers" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="imageData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="imageLocalName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isCaseSensitive" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="locationName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="model3dData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="model3dLocalName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model3dUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="points" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="searchString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="treasureDescription" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="DeepCopyUser" representedClassName="DeepCopyUser" syncable="YES" codeGenerationType="class">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="birthdate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="confirmPassword" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="encryptedConfirmPassword" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="encryptedPassword" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="encryptedUsername" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="imageData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isForApproval" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="middleName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mobile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="searchString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="File" representedClassName="File" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="fsfn" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="path" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sdui" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="size" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="FinishedGame" representedClassName="FinishedGame" syncable="YES" codeGenerationType="class">
+        <attribute name="gameId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Game" representedClassName="Game" syncable="YES" codeGenerationType="class">
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="discussion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="encryptedSecurityCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="end" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isNoExpiration" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isSecure" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isTimeBound" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="minutes" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="searchString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="securityCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="start" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="startingClueId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="startingClueName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="totalPoints" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="clues" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GameClue" inverseName="game" inverseEntity="GameClue" syncable="YES"/>
+        <relationship name="treasure" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GameTreasure" inverseName="game" inverseEntity="GameTreasure" syncable="YES"/>
+    </entity>
+    <entity name="GameClue" representedClassName="GameClue" syncable="YES" codeGenerationType="class">
+        <attribute name="clue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="gameId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="gpClassId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gpClueId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gpClueName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gpGameId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gpIsDone" optional="YES" attributeType="String" defaultValueString="0" syncable="YES"/>
+        <attribute name="gpNumberOfAttempts" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gpOrder" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="gpPlayerId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gpPlayerName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gpPoints" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="locationName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="points" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="pointsOnAttempts" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="riddle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="choices" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GameClueChoice" inverseName="clue" inverseEntity="GameClueChoice" syncable="YES"/>
+        <relationship name="game" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Game" inverseName="clues" inverseEntity="Game" syncable="YES"/>
+    </entity>
+    <entity name="GameClueChoice" representedClassName="GameClueChoice" syncable="YES" codeGenerationType="class">
+        <attribute name="answer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="choiceStatement" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="clueId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="encryptedAnswer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gameId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="gpHasBeenSelected" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isCaseSensitive" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isCorrect" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="clue" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GameClue" inverseName="choices" inverseEntity="GameClue" syncable="YES"/>
+    </entity>
+    <entity name="GameTreasure" representedClassName="GameTreasure" syncable="YES" codeGenerationType="class">
+        <attribute name="claimingAnswers" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="claimingQuestion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="encryptedClaimingAnswers" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gameId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="gpClassId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gpGameId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gpIsDone" optional="YES" attributeType="String" defaultValueString="0" syncable="YES"/>
+        <attribute name="gpNumberOfAttempts" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gpPlayerId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gpPlayerName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gpPoints" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gpTreasureId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gpTreasureName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="imageLocalName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isCaseSensitive" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="locationName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="model3dLocalName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model3dUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="points" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="treasureDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="game" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Game" inverseName="treasure" inverseEntity="Game" syncable="YES"/>
+    </entity>
+    <entity name="PlayerRanking" representedClassName="PlayerRanking" syncable="YES" codeGenerationType="class">
+        <attribute name="level" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="playerId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="playerImageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="playerName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="points" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="Sidekick" representedClassName="Sidekick" syncable="YES" codeGenerationType="class">
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="level" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ownedBy" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="points" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="Treasure" representedClassName="Treasure" syncable="YES" codeGenerationType="class">
+        <attribute name="claimingAnswers" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="claimingQuestion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="encryptedClaimingAnswers" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="imageLocalName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isCaseSensitive" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="locationName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="model3dLocalName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model3dUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="points" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="searchString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="treasureDescription" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="birthdate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="encryptedPassword" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="encryptedUsername" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isForApproval" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="middleName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mobile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="searchString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Activity" positionX="-36" positionY="135" width="128" height="120"/>
+        <element name="Class" positionX="-54" positionY="135" width="128" height="285"/>
+        <element name="ClassCourse" positionX="-18" positionY="162" width="128" height="195"/>
+        <element name="ClassCreator" positionX="-45" positionY="144" width="128" height="345"/>
+        <element name="ClassPlayer" positionX="0" positionY="171" width="128" height="345"/>
+        <element name="Clue" positionX="-36" positionY="135" width="128" height="255"/>
+        <element name="ClueChoice" positionX="-27" positionY="144" width="128" height="195"/>
+        <element name="Course" positionX="-63" positionY="54" width="128" height="180"/>
+        <element name="DeepCopyClass" positionX="-36" positionY="135" width="128" height="300"/>
+        <element name="DeepCopyClassCourse" positionX="-27" positionY="144" width="128" height="195"/>
+        <element name="DeepCopyClassCreator" positionX="-18" positionY="153" width="128" height="345"/>
+        <element name="DeepCopyClassPlayer" positionX="-9" positionY="162" width="128" height="345"/>
+        <element name="DeepCopyClue" positionX="-27" positionY="144" width="128" height="285"/>
+        <element name="DeepCopyClueChoice" positionX="-18" positionY="153" width="128" height="195"/>
+        <element name="DeepCopyCourse" positionX="-54" positionY="99" width="128" height="180"/>
+        <element name="DeepCopyGame" positionX="9" positionY="171" width="128" height="405"/>
+        <element name="DeepCopyGameClue" positionX="36" positionY="189" width="128" height="270"/>
+        <element name="DeepCopyGameClueChoice" positionX="-18" positionY="135" width="128" height="210"/>
+        <element name="DeepCopyGameTreasure" positionX="18" positionY="180" width="128" height="345"/>
+        <element name="DeepCopySidekick" positionX="-9" positionY="144" width="128" height="165"/>
+        <element name="DeepCopyTreasure" positionX="-27" positionY="144" width="128" height="360"/>
+        <element name="DeepCopyUser" positionX="-54" positionY="108" width="128" height="390"/>
+        <element name="File" positionX="-27" positionY="144" width="128" height="150"/>
+        <element name="FinishedGame" positionX="-18" positionY="135" width="128" height="75"/>
+        <element name="Game" positionX="-36" positionY="135" width="128" height="345"/>
+        <element name="GameClue" positionX="-18" positionY="153" width="128" height="420"/>
+        <element name="GameClueChoice" positionX="-9" positionY="162" width="128" height="225"/>
+        <element name="GameTreasure" positionX="-27" positionY="144" width="128" height="480"/>
+        <element name="PlayerRanking" positionX="-18" positionY="135" width="128" height="120"/>
+        <element name="Sidekick" positionX="-18" positionY="135" width="128" height="165"/>
+        <element name="Treasure" positionX="-36" positionY="135" width="128" height="330"/>
+        <element name="User" positionX="-63" positionY="-18" width="128" height="345"/>
+    </elements>
+</model>

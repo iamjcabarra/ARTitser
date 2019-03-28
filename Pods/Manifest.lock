@@ -1,0 +1,91 @@
+PODS:
+  - ARCL (1.0.2)
+  - Charts (3.0.4):
+    - Charts/Core (= 3.0.4)
+  - Charts/Core (3.0.4)
+  - ChartsRealm (3.0.4):
+    - Charts (= 3.0.4)
+    - RealmSwift (~> 2.10)
+  - CryptoSwift (0.8.1)
+  - DatePickerDialog (2.0)
+  - FLAnimatedImage (1.0.12)
+  - GoogleMaps (2.6.0):
+    - GoogleMaps/Maps (= 2.6.0)
+  - GoogleMaps/Base (2.6.0)
+  - GoogleMaps/Maps (2.6.0):
+    - GoogleMaps/Base
+  - GooglePlacePicker (2.6.0):
+    - GoogleMaps (= 2.6.0)
+    - GooglePlaces (= 2.6.0)
+  - GooglePlaces (2.6.0):
+    - GoogleMaps/Base (= 2.6.0)
+  - IQKeyboardManagerSwift (5.0.0)
+  - Nuke (6.0)
+  - Nuke-FLAnimatedImage-Plugin (3.0):
+    - FLAnimatedImage (~> 1.0)
+    - Nuke (~> 6.0)
+  - PKHUD (5.0.0)
+  - Realm (2.10.2):
+    - Realm/Headers (= 2.10.2)
+  - Realm/Headers (2.10.2)
+  - RealmSwift (2.10.2):
+    - Realm (= 2.10.2)
+  - SDWebImage (4.3.0):
+    - SDWebImage/Core (= 4.3.0)
+  - SDWebImage/Core (4.3.0)
+
+DEPENDENCIES:
+  - ARCL
+  - Charts
+  - ChartsRealm
+  - CryptoSwift
+  - DatePickerDialog
+  - GoogleMaps
+  - GooglePlacePicker
+  - GooglePlaces
+  - IQKeyboardManagerSwift (= 5.0.0)
+  - Nuke (~> 6.0)
+  - Nuke-FLAnimatedImage-Plugin
+  - PKHUD (~> 5.0)
+  - SDWebImage (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ARCL
+    - Charts
+    - ChartsRealm
+    - CryptoSwift
+    - DatePickerDialog
+    - FLAnimatedImage
+    - GoogleMaps
+    - GooglePlacePicker
+    - GooglePlaces
+    - IQKeyboardManagerSwift
+    - Nuke
+    - Nuke-FLAnimatedImage-Plugin
+    - PKHUD
+    - Realm
+    - RealmSwift
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  ARCL: 88300cadfbdd6a9288ca17ad18d3ac972d6cb1e6
+  Charts: 0705898046257443f0afbbc3179f4b67507b6e48
+  ChartsRealm: 3cf7c9ebf9c6312efbf418cf1da91d72d5416b26
+  CryptoSwift: 4b07d5b508c1eb67bfa314a727b705f8048a85de
+  DatePickerDialog: 5e1c24d9fe6506cd45dbc573eed7b0a251b1c09d
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  GoogleMaps: 42f91c68b7fa2f84d5c86597b18ceb99f5414c7f
+  GooglePlacePicker: e4488625effb006f59de49e14b7a603e463e4261
+  GooglePlaces: f6ddf33b75cef69e888907d9947c57198ed845f3
+  IQKeyboardManagerSwift: 3f340202ebe1a7076279b9b9b3c817243ddb3aab
+  Nuke: d83812262734dad51e3c498cb1c4f7923f2b78c6
+  Nuke-FLAnimatedImage-Plugin: 66f279e76d1d937bedf63f8162ff0a114521e7a7
+  PKHUD: 3c001512c6e002091184197a8de7a20420786e3b
+  Realm: 0ef72b837fb67e9f4b098bac771ddd72c7fdbb69
+  RealmSwift: 07a9ae0505091eda6b2ee7c190c3786d6e90a7b0
+  SDWebImage: 6da6c8bca115addc4de8613362e1b15f66333825
+
+PODFILE CHECKSUM: 5e80d40d2185bdd7ce6cecf0eb0dcedc1a284100
+
+COCOAPODS: 1.5.3

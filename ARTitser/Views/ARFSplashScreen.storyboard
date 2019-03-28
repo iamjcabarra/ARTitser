@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QBp-xj-9va">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="npW-In-xSB">
+            <objects>
+                <viewController id="QBp-xj-9va" customClass="ARFGENSplashViewController" customModule="ARFollow" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YS6-eo-Ldi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgAppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="hir-ca-1UO">
+                                <rect key="frame" x="62.5" y="246" width="250" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="TSx-JX-Q5Y"/>
+                                    <constraint firstAttribute="width" constant="250" id="mrA-Dj-RGR"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hir-ca-1UO" firstAttribute="centerY" secondItem="YS6-eo-Ldi" secondAttribute="centerY" id="cvw-lv-o03"/>
+                            <constraint firstItem="hir-ca-1UO" firstAttribute="centerX" secondItem="YS6-eo-Ldi" secondAttribute="centerX" id="xIa-3C-9Vb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1qs-MT-qiU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nal-2Z-oBA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-279" y="-119"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="imgAppLogo" width="512" height="512"/>
+    </resources>
+</document>

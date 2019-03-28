@@ -1,0 +1,1032 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E01D2231FDA250E0029422C /* ARFGAClassUserSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E01D2221FDA250E0029422C /* ARFGAClassUserSelectionViewController.swift */; };
+		3E01D2251FDA315B0029422C /* ARFGAClassUserSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E01D2241FDA315B0029422C /* ARFGAClassUserSelectionTableViewCell.swift */; };
+		3E079F79205002A1000843A0 /* ARFGPTreasure3DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E079F78205002A1000843A0 /* ARFGPTreasure3DViewController.swift */; };
+		3E08EF632019B7E7008C1169 /* ARFGCTreasureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E08EF622019B7E7008C1169 /* ARFGCTreasureTableViewCell.swift */; };
+		3E3214301FE0CD88008C492A /* ARFGAClassDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E32142F1FE0CD88008C492A /* ARFGAClassDetailsViewController.swift */; };
+		3E3214321FE12242008C492A /* ARFGAActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3214311FE12242008C492A /* ARFGAActivityTableViewCell.swift */; };
+		3E36D5F41FE7646200D9E1D2 /* ARFGCClueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E36D5F31FE7646200D9E1D2 /* ARFGCClueViewController.swift */; };
+		3E36D5F61FE7647000D9E1D2 /* ARFGCTreasureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E36D5F51FE7647000D9E1D2 /* ARFGCTreasureViewController.swift */; };
+		3E36D5F81FE7647C00D9E1D2 /* ARFGCGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E36D5F71FE7647C00D9E1D2 /* ARFGCGameViewController.swift */; };
+		3E42CDAD1F9DD6E90049B5AE /* ARFGADashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E42CDAC1F9DD6E90049B5AE /* ARFGADashboardViewController.swift */; };
+		3E42CDB11F9DD7610049B5AE /* ARFGAUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E42CDB01F9DD7610049B5AE /* ARFGAUserViewController.swift */; };
+		3E42CDB31F9DD7700049B5AE /* ARFGACourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E42CDB21F9DD7700049B5AE /* ARFGACourseViewController.swift */; };
+		3E42CDB51F9DD77C0049B5AE /* ARFGAClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E42CDB41F9DD77C0049B5AE /* ARFGAClassViewController.swift */; };
+		3E42CDB71F9DEAA10049B5AE /* ARFGAUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E42CDB61F9DEAA10049B5AE /* ARFGAUserTableViewCell.swift */; };
+		3E42CDB91F9DEE750049B5AE /* ARFGACourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E42CDB81F9DEE750049B5AE /* ARFGACourseTableViewCell.swift */; };
+		3E44209B2050B44E008DD6DA /* ARF3dModels.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E44209A2050B44E008DD6DA /* ARF3dModels.scnassets */; };
+		3E509D921FCFF1780076C2AF /* ARFGAUserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E509D911FCFF1780076C2AF /* ARFGAUserDetailsViewController.swift */; };
+		3E53208F1FDE752900A6D74E /* ARFGAClassCourseSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53208E1FDE752900A6D74E /* ARFGAClassCourseSelectionViewController.swift */; };
+		3E5320911FDE83F700A6D74E /* ARFGAClassCourseSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5320901FDE83F700A6D74E /* ARFGAClassCourseSelectionTableViewCell.swift */; };
+		3E5891971FB1BA0000B7A8FD /* ARFGACourseCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5891961FB1B9FF00B7A8FD /* ARFGACourseCreationViewController.swift */; };
+		3E5891991FB1BA4300B7A8FD /* ARFGACourseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5891981FB1BA4300B7A8FD /* ARFGACourseDetailsViewController.swift */; };
+		3E5DE308201EC4570041593A /* ARFGCGameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5DE307201EC4570041593A /* ARFGCGameTableViewCell.swift */; };
+		3E5DE30A201F15DB0041593A /* ARFGCGameCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5DE309201F15DB0041593A /* ARFGCGameCreationViewController.swift */; };
+		3E61183D1FE22CDD0004272F /* ARFGCDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E61183C1FE22CDD0004272F /* ARFGCDashboardViewController.swift */; };
+		3E62CD702053A6EF00B7185B /* ARFGPGameClueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E62CD6E2053A6EF00B7185B /* ARFGPGameClueViewController.swift */; };
+		3E62CD752053B11200B7185B /* ARFGPGameClueChoiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E62CD742053B11200B7185B /* ARFGPGameClueChoiceTableViewCell.swift */; };
+		3E62CD7720541EB300B7185B /* ARFGPGameTreasureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E62CD7620541EB300B7185B /* ARFGPGameTreasureViewController.swift */; };
+		3E6304B520202069005619AE /* ARFGCGameClueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6304B420202069005619AE /* ARFGCGameClueTableViewCell.swift */; };
+		3E7522C7202ACE9900D99BDE /* ARFGPClassDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7522C6202ACE9900D99BDE /* ARFGPClassDetailsViewController.swift */; };
+		3E7522C9202AD59200D99BDE /* ARFGPGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7522C8202AD59200D99BDE /* ARFGPGameViewController.swift */; };
+		3E7522CD202AE24700D99BDE /* ARFGPClassCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7522CC202AE24700D99BDE /* ARFGPClassCollectionViewCell.swift */; };
+		3E7522CF202AE62D00D99BDE /* ARFGPGameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7522CE202AE62D00D99BDE /* ARFGPGameCollectionViewCell.swift */; };
+		3E76179D1FEB459600D2BA98 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3E76179C1FEB459600D2BA98 /* Settings.bundle */; };
+		3E76179F1FEB7EE900D2BA98 /* ARFGCClueTypeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E76179E1FEB7EE900D2BA98 /* ARFGCClueTypeSelectionViewController.swift */; };
+		3E7617A11FEB7F1900D2BA98 /* ARFGCClueTypeSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7617A01FEB7F1900D2BA98 /* ARFGCClueTypeSelectionTableViewCell.swift */; };
+		3E7749332071C4A200DB1B6B /* ARFGPMechanicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7749322071C4A200DB1B6B /* ARFGPMechanicsViewController.swift */; };
+		3E7749352071C6B500DB1B6B /* ARFGPMechanicsPage1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7749342071C6B500DB1B6B /* ARFGPMechanicsPage1ViewController.swift */; };
+		3E7749372071C9D400DB1B6B /* ARFGPMechanicsPage2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7749362071C9D400DB1B6B /* ARFGPMechanicsPage2ViewController.swift */; };
+		3E7749392071C9E700DB1B6B /* ARFGPMechanicsPage3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7749382071C9E700DB1B6B /* ARFGPMechanicsPage3ViewController.swift */; };
+		3E77493B2071C9FC00DB1B6B /* ARFGPMechanicsPage4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E77493A2071C9FC00DB1B6B /* ARFGPMechanicsPage4ViewController.swift */; };
+		3E77493D2071CA0C00DB1B6B /* ARFGPMechanicsPage5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E77493C2071CA0C00DB1B6B /* ARFGPMechanicsPage5ViewController.swift */; };
+		3E77493F2071CA1F00DB1B6B /* ARFGPMechanicsPage6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E77493E2071CA1F00DB1B6B /* ARFGPMechanicsPage6ViewController.swift */; };
+		3E7749412071CA2F00DB1B6B /* ARFGPMechanicsPage7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7749402071CA2F00DB1B6B /* ARFGPMechanicsPage7ViewController.swift */; };
+		3E7749432071CA3F00DB1B6B /* ARFGPMechanicsPage8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7749422071CA3F00DB1B6B /* ARFGPMechanicsPage8ViewController.swift */; };
+		3E7749452071DBE000DB1B6B /* ARFGPMechanicsPage9ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7749442071DBE000DB1B6B /* ARFGPMechanicsPage9ViewController.swift */; };
+		3E89A4EF1F8F603800942B55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E89A4EE1F8F603800942B55 /* AppDelegate.swift */; };
+		3E89A5081F8F60E400942B55 /* ARFPrimaryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E89A5071F8F60E400942B55 /* ARFPrimaryStoryboard.storyboard */; };
+		3E89A50A1F8F612C00942B55 /* ARFSplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E89A5091F8F612C00942B55 /* ARFSplashScreen.storyboard */; };
+		3E89A5131F8F630600942B55 /* ARFConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E89A5121F8F630600942B55 /* ARFConstants.swift */; };
+		3E89A5151F8F635D00942B55 /* ARFCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E89A5141F8F635D00942B55 /* ARFCoreDataStack.swift */; };
+		3E89A5171F8F639A00942B55 /* ARFServerRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E89A5161F8F639A00942B55 /* ARFServerRequestHelper.swift */; };
+		3E89A5191F8F63D400942B55 /* ARFDataParserHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E89A5181F8F63D400942B55 /* ARFDataParserHelper.swift */; };
+		3E89A51B1F8F63F900942B55 /* ARFExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E89A51A1F8F63F900942B55 /* ARFExtensions.swift */; };
+		3E89A51D1F8F644400942B55 /* ARFDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E89A51C1F8F644400942B55 /* ARFDataManager.swift */; };
+		3E8B059A20511817008BEAB5 /* ARFLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B059920511817008BEAB5 /* ARFLocationManager.swift */; };
+		3E92489A20296F5B007F3E1B /* ARFGPSidekickSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E92489920296F5B007F3E1B /* ARFGPSidekickSelectionViewController.swift */; };
+		3E92489C20296FAC007F3E1B /* ARFGPSidekickNamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E92489B20296FAC007F3E1B /* ARFGPSidekickNamingViewController.swift */; };
+		3E92489E20296FF5007F3E1B /* ARFGPSidekickWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E92489D20296FF5007F3E1B /* ARFGPSidekickWelcomeViewController.swift */; };
+		3E9248A02029710B007F3E1B /* ARFGPClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E92489F2029710B007F3E1B /* ARFGPClassViewController.swift */; };
+		3E93150D20319FD700814C36 /* ARFGCGameResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E93150C20319FD700814C36 /* ARFGCGameResultViewController.swift */; };
+		3E96240E2033C2C500CF9E0D /* ARFGENAboutPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E96240C2033C2C500CF9E0D /* ARFGENAboutPopover.swift */; };
+		3E96240F2033C2C500CF9E0D /* ARFGENAboutPopover.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E96240D2033C2C500CF9E0D /* ARFGENAboutPopover.xib */; };
+		3E9624112033CEF200CF9E0D /* ARFGPSidekickDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9624102033CEF200CF9E0D /* ARFGPSidekickDetailsViewController.swift */; };
+		3E9624132034054600CF9E0D /* ARFGPTreasureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9624122034054600CF9E0D /* ARFGPTreasureViewController.swift */; };
+		3E9624152034056500CF9E0D /* ARFGPTreasureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9624142034056500CF9E0D /* ARFGPTreasureCollectionViewCell.swift */; };
+		3E96621A201D7C7F002459FF /* ARFGCTreasureDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E966219201D7C7E002459FF /* ARFGCTreasureDetailsViewController.swift */; };
+		3E96E31A2034250900EEC000 /* ARFGPRankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E96E3192034250900EEC000 /* ARFGPRankingViewController.swift */; };
+		3E96E31C2034252800EEC000 /* ARFGPRankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E96E31B2034252800EEC000 /* ARFGPRankingTableViewCell.swift */; };
+		3E9BADA4202E89BF0087402A /* ARFGPGameDiscussionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9BADA3202E89BF0087402A /* ARFGPGameDiscussionViewController.swift */; };
+		3E9BADA6202EBB770087402A /* ARFGPGamePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9BADA5202EBB770087402A /* ARFGPGamePlayViewController.swift */; };
+		3E9D234520268980007539F5 /* ARFGCGameDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9D234420268980007539F5 /* ARFGCGameDetailsViewController.swift */; };
+		3E9DFF4120556D3500E160AF /* ARFGPGamePauseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9DFF4020556D3500E160AF /* ARFGPGamePauseViewController.swift */; };
+		3E9DFF43205580BE00E160AF /* ARFGPGameMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9DFF42205580BE00E160AF /* ARFGPGameMapViewController.swift */; };
+		3E9EE7B3205163E500C7AABB /* ARFGENSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9EE7B2205163E500C7AABB /* ARFGENSplashViewController.swift */; };
+		3EA2485720099FA700A124B4 /* ARFGCSetAttemptsPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA2485520099FA700A124B4 /* ARFGCSetAttemptsPopover.swift */; };
+		3EA2485820099FA700A124B4 /* ARFGCSetAttemptsPopover.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EA2485620099FA700A124B4 /* ARFGCSetAttemptsPopover.xib */; };
+		3EA2485A2009A00100A124B4 /* ARFGCClueCreationMultipleChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA248592009A00100A124B4 /* ARFGCClueCreationMultipleChoiceViewController.swift */; };
+		3EA2485C2009A05300A124B4 /* ARFGCClueCreationMultipleChoiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA2485B2009A05300A124B4 /* ARFGCClueCreationMultipleChoiceTableViewCell.swift */; };
+		3EA316C720257782007B15DB /* ARFGCGameTreasureSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA316C620257782007B15DB /* ARFGCGameTreasureSelectionViewController.swift */; };
+		3EA316C9202577B5007B15DB /* ARFGCGameTreasureSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA316C8202577B5007B15DB /* ARFGCGameTreasureSelectionTableViewCell.swift */; };
+		3EA316CB2025B3C1007B15DB /* ARFGCGameClueSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA316CA2025B3C1007B15DB /* ARFGCGameClueSelectionViewController.swift */; };
+		3EA316CD2025B3DE007B15DB /* ARFGCGameClueSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA316CC2025B3DE007B15DB /* ARFGCGameClueSelectionTableViewCell.swift */; };
+		3EA7FA4820325D5F00564C60 /* ARFGCGameResultClassSelectionPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA7FA4620325D5F00564C60 /* ARFGCGameResultClassSelectionPopover.swift */; };
+		3EA7FA4920325D5F00564C60 /* ARFGCGameResultClassSelectionPopover.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EA7FA4720325D5F00564C60 /* ARFGCGameResultClassSelectionPopover.xib */; };
+		3EA99601201C7E0E008D1AA1 /* ARFSandboxHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA99600201C7E0E008D1AA1 /* ARFSandboxHelper.swift */; };
+		3EA99609201C8C67008D1AA1 /* ARFGCFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA99608201C8C67008D1AA1 /* ARFGCFileViewController.swift */; };
+		3EA9960B201C8CAC008D1AA1 /* ARFGCFileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA9960A201C8CAC008D1AA1 /* ARFGCFileTableViewCell.swift */; };
+		3EA9DFDB2054AD33005E5F65 /* ARFGPGameTreasure3dViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA9DFDA2054AD33005E5F65 /* ARFGPGameTreasure3dViewController.swift */; };
+		3EAAF19B20006FDB0094EBB1 /* ARFDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3EAAF19920006FDB0094EBB1 /* ARFDataModel.xcdatamodeld */; };
+		3EAE0758201AFD2100C908AC /* ARFGCTreasureCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAE0757201AFD2100C908AC /* ARFGCTreasureCreationViewController.swift */; };
+		3EB1788B1FC3D21500404A89 /* ARFGAUserCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB1788A1FC3D21500404A89 /* ARFGAUserCreationViewController.swift */; };
+		3EB21A3D1FA1F41400BEA172 /* ARFGENMyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB21A3C1FA1F41400BEA172 /* ARFGENMyAccountViewController.swift */; };
+		3EB3F89C2014596600FD58A8 /* ARFGCClueDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3F89B2014596600FD58A8 /* ARFGCClueDetailsViewController.swift */; };
+		3EB8C7BE205621DD00710676 /* ARFGPGamePlayResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB8C7BD205621DD00710676 /* ARFGPGamePlayResultViewController.swift */; };
+		3EC12C152026E7ED00D339DE /* ARFGCGameClassSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC12C142026E7ED00D339DE /* ARFGCGameClassSelectionViewController.swift */; };
+		3EC12C172026E87D00D339DE /* ARFGCGameClassSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC12C162026E87D00D339DE /* ARFGCGameClassSelectionTableViewCell.swift */; };
+		3EC1DBFD2057988D008EB930 /* ARFAssetCatalog.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EC1DBFC2057988D008EB930 /* ARFAssetCatalog.xcassets */; };
+		3ECB6197205889270064F239 /* ARFChartFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECB6196205889270064F239 /* ARFChartFormatter.swift */; };
+		3ECB619920588A530064F239 /* ARFBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECB619820588A530064F239 /* ARFBarChart.swift */; };
+		3ED126811FB53F1B007ED842 /* ARFGENPrimaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED126801FB53F1B007ED842 /* ARFGENPrimaryViewController.swift */; };
+		3EE02F5C1FD8D26900C46680 /* ARFGAClassCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE02F5B1FD8D26900C46680 /* ARFGAClassCreationViewController.swift */; };
+		3EE02F5E1FD8F1E400C46680 /* ARFGAClassPlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE02F5D1FD8F1E400C46680 /* ARFGAClassPlayerTableViewCell.swift */; };
+		3EE1752B1FD799AB0075BF95 /* ARFGAClassTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE1752A1FD799AB0075BF95 /* ARFGAClassTableViewCell.swift */; };
+		3EECAAA81FC50913004E105B /* ARFGAUserTypePopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EECAAA61FC50913004E105B /* ARFGAUserTypePopover.swift */; };
+		3EECAAA91FC50913004E105B /* ARFGAUserTypePopover.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EECAAA71FC50913004E105B /* ARFGAUserTypePopover.xib */; };
+		3EEE0B811FE90F4800D4406E /* ARFGCClueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEE0B801FE90F4800D4406E /* ARFGCClueTableViewCell.swift */; };
+		3EF4EFA51F90474700FD5DB9 /* ARFGAStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EF4EFA41F90474700FD5DB9 /* ARFGAStoryboard.storyboard */; };
+		3EF4EFA71F90475900FD5DB9 /* ARFGCStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EF4EFA61F90475900FD5DB9 /* ARFGCStoryboard.storyboard */; };
+		3EF4EFA91F90476800FD5DB9 /* ARFGPStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EF4EFA81F90476800FD5DB9 /* ARFGPStoryboard.storyboard */; };
+		478E04341F243B744FBC692A /* Pods_ARFollow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EBB80FE0FB61B312EFABFC /* Pods_ARFollow.framework */; };
+		EF1BFEF9216F841F009FDB01 /* background_001.wav in Resources */ = {isa = PBXBuildFile; fileRef = EF1BFEF8216F841F009FDB01 /* background_001.wav */; };
+		EFDCD60A216E364B0068945F /* wrong_001.wav in Resources */ = {isa = PBXBuildFile; fileRef = EFDCD608216E364A0068945F /* wrong_001.wav */; };
+		EFDCD60D216E38610068945F /* correct_001.wav in Resources */ = {isa = PBXBuildFile; fileRef = EFDCD60C216E38610068945F /* correct_001.wav */; };
+		EFF423AF216D06EE008C6022 /* AssimpKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF282139216BA0BF00B54255 /* AssimpKit.framework */; };
+		EFF47512216A3FAC00CBD391 /* sk_0002.gif in Resources */ = {isa = PBXBuildFile; fileRef = EFF47510216A3FA400CBD391 /* sk_0002.gif */; };
+		EFF47513216A3FAC00CBD391 /* sk_0001.gif in Resources */ = {isa = PBXBuildFile; fileRef = EFF47511216A3FA800CBD391 /* sk_0001.gif */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3E01D2221FDA250E0029422C /* ARFGAClassUserSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGAClassUserSelectionViewController.swift; sourceTree = "<group>"; };
+		3E01D2241FDA315B0029422C /* ARFGAClassUserSelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGAClassUserSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		3E079F78205002A1000843A0 /* ARFGPTreasure3DViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPTreasure3DViewController.swift; sourceTree = "<group>"; };
+		3E08EF622019B7E7008C1169 /* ARFGCTreasureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGCTreasureTableViewCell.swift; sourceTree = "<group>"; };
+		3E32142F1FE0CD88008C492A /* ARFGAClassDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGAClassDetailsViewController.swift; sourceTree = "<group>"; };
+		3E3214311FE12242008C492A /* ARFGAActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGAActivityTableViewCell.swift; sourceTree = "<group>"; };
+		3E36D5F31FE7646200D9E1D2 /* ARFGCClueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGCClueViewController.swift; sourceTree = "<group>"; };
+		3E36D5F51FE7647000D9E1D2 /* ARFGCTreasureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGCTreasureViewController.swift; sourceTree = "<group>"; };
+		3E36D5F71FE7647C00D9E1D2 /* ARFGCGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGCGameViewController.swift; sourceTree = "<group>"; };
+		3E42CDAC1F9DD6E90049B5AE /* ARFGADashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGADashboardViewController.swift; sourceTree = "<group>"; };
+		3E42CDB01F9DD7610049B5AE /* ARFGAUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGAUserViewController.swift; sourceTree = "<group>"; };
+		3E42CDB21F9DD7700049B5AE /* ARFGACourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGACourseViewController.swift; sourceTree = "<group>"; };
+		3E42CDB41F9DD77C0049B5AE /* ARFGAClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGAClassViewController.swift; sourceTree = "<group>"; };
+		3E42CDB61F9DEAA10049B5AE /* ARFGAUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGAUserTableViewCell.swift; sourceTree = "<group>"; };
+		3E42CDB81F9DEE750049B5AE /* ARFGACourseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGACourseTableViewCell.swift; sourceTree = "<group>"; };
+		3E44209A2050B44E008DD6DA /* ARF3dModels.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = ARF3dModels.scnassets; sourceTree = "<group>"; };
+		3E509D911FCFF1780076C2AF /* ARFGAUserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGAUserDetailsViewController.swift; sourceTree = "<group>"; };
+		3E53208E1FDE752900A6D74E /* ARFGAClassCourseSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGAClassCourseSelectionViewController.swift; sourceTree = "<group>"; };
+		3E5320901FDE83F700A6D74E /* ARFGAClassCourseSelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGAClassCourseSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		3E5891961FB1B9FF00B7A8FD /* ARFGACourseCreationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARFGACourseCreationViewController.swift; sourceTree = "<group>"; };
+		3E5891981FB1BA4300B7A8FD /* ARFGACourseDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGACourseDetailsViewController.swift; sourceTree = "<group>"; };
+		3E5DE307201EC4570041593A /* ARFGCGameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGCGameTableViewCell.swift; sourceTree = "<group>"; };
+		3E5DE309201F15DB0041593A /* ARFGCGameCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGCGameCreationViewController.swift; sourceTree = "<group>"; };
+		3E61183C1FE22CDD0004272F /* ARFGCDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGCDashboardViewController.swift; sourceTree = "<group>"; };
+		3E62CD6E2053A6EF00B7185B /* ARFGPGameClueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPGameClueViewController.swift; sourceTree = "<group>"; };
+		3E62CD742053B11200B7185B /* ARFGPGameClueChoiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPGameClueChoiceTableViewCell.swift; sourceTree = "<group>"; };
+		3E62CD7620541EB300B7185B /* ARFGPGameTreasureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPGameTreasureViewController.swift; sourceTree = "<group>"; };
+		3E6304B420202069005619AE /* ARFGCGameClueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGCGameClueTableViewCell.swift; sourceTree = "<group>"; };
+		3E7522C6202ACE9900D99BDE /* ARFGPClassDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPClassDetailsViewController.swift; sourceTree = "<group>"; };
+		3E7522C8202AD59200D99BDE /* ARFGPGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPGameViewController.swift; sourceTree = "<group>"; };
+		3E7522CC202AE24700D99BDE /* ARFGPClassCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPClassCollectionViewCell.swift; sourceTree = "<group>"; };
+		3E7522CE202AE62D00D99BDE /* ARFGPGameCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPGameCollectionViewCell.swift; sourceTree = "<group>"; };
+		3E76179C1FEB459600D2BA98 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		3E76179E1FEB7EE900D2BA98 /* ARFGCClueTypeSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGCClueTypeSelectionViewController.swift; sourceTree = "<group>"; };
+		3E7617A01FEB7F1900D2BA98 /* ARFGCClueTypeSelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGCClueTypeSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		3E7749322071C4A200DB1B6B /* ARFGPMechanicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPMechanicsViewController.swift; sourceTree = "<group>"; };
+		3E7749342071C6B500DB1B6B /* ARFGPMechanicsPage1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPMechanicsPage1ViewController.swift; sourceTree = "<group>"; };
+		3E7749362071C9D400DB1B6B /* ARFGPMechanicsPage2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPMechanicsPage2ViewController.swift; sourceTree = "<group>"; };
+		3E7749382071C9E700DB1B6B /* ARFGPMechanicsPage3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPMechanicsPage3ViewController.swift; sourceTree = "<group>"; };
+		3E77493A2071C9FC00DB1B6B /* ARFGPMechanicsPage4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPMechanicsPage4ViewController.swift; sourceTree = "<group>"; };
+		3E77493C2071CA0C00DB1B6B /* ARFGPMechanicsPage5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPMechanicsPage5ViewController.swift; sourceTree = "<group>"; };
+		3E77493E2071CA1F00DB1B6B /* ARFGPMechanicsPage6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPMechanicsPage6ViewController.swift; sourceTree = "<group>"; };
+		3E7749402071CA2F00DB1B6B /* ARFGPMechanicsPage7ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPMechanicsPage7ViewController.swift; sourceTree = "<group>"; };
+		3E7749422071CA3F00DB1B6B /* ARFGPMechanicsPage8ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPMechanicsPage8ViewController.swift; sourceTree = "<group>"; };
+		3E7749442071DBE000DB1B6B /* ARFGPMechanicsPage9ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPMechanicsPage9ViewController.swift; sourceTree = "<group>"; };
+		3E89A4EB1F8F603800942B55 /* ARTitser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARTitser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E89A4EE1F8F603800942B55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3E89A5071F8F60E400942B55 /* ARFPrimaryStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ARFPrimaryStoryboard.storyboard; sourceTree = "<group>"; };
+		3E89A5091F8F612C00942B55 /* ARFSplashScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ARFSplashScreen.storyboard; sourceTree = "<group>"; };
+		3E89A50B1F8F61B600942B55 /* ARFInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ARFInfo.plist; sourceTree = "<group>"; };
+		3E89A5121F8F630600942B55 /* ARFConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFConstants.swift; sourceTree = "<group>"; };
+		3E89A5141F8F635D00942B55 /* ARFCoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFCoreDataStack.swift; sourceTree = "<group>"; };
+		3E89A5161F8F639A00942B55 /* ARFServerRequestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFServerRequestHelper.swift; sourceTree = "<group>"; };
+		3E89A5181F8F63D400942B55 /* ARFDataParserHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFDataParserHelper.swift; sourceTree = "<group>"; };
+		3E89A51A1F8F63F900942B55 /* ARFExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFExtensions.swift; sourceTree = "<group>"; };
+		3E89A51C1F8F644400942B55 /* ARFDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFDataManager.swift; sourceTree = "<group>"; };
+		3E8B059920511817008BEAB5 /* ARFLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFLocationManager.swift; sourceTree = "<group>"; };
+		3E92489920296F5B007F3E1B /* ARFGPSidekickSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPSidekickSelectionViewController.swift; sourceTree = "<group>"; };
+		3E92489B20296FAC007F3E1B /* ARFGPSidekickNamingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPSidekickNamingViewController.swift; sourceTree = "<group>"; };
+		3E92489D20296FF5007F3E1B /* ARFGPSidekickWelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPSidekickWelcomeViewController.swift; sourceTree = "<group>"; };
+		3E92489F2029710B007F3E1B /* ARFGPClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPClassViewController.swift; sourceTree = "<group>"; };
+		3E93150C20319FD700814C36 /* ARFGCGameResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGCGameResultViewController.swift; sourceTree = "<group>"; };
+		3E96240C2033C2C500CF9E0D /* ARFGENAboutPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGENAboutPopover.swift; sourceTree = "<group>"; };
+		3E96240D2033C2C500CF9E0D /* ARFGENAboutPopover.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ARFGENAboutPopover.xib; sourceTree = "<group>"; };
+		3E9624102033CEF200CF9E0D /* ARFGPSidekickDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPSidekickDetailsViewController.swift; sourceTree = "<group>"; };
+		3E9624122034054600CF9E0D /* ARFGPTreasureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPTreasureViewController.swift; sourceTree = "<group>"; };
+		3E9624142034056500CF9E0D /* ARFGPTreasureCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPTreasureCollectionViewCell.swift; sourceTree = "<group>"; };
+		3E966219201D7C7E002459FF /* ARFGCTreasureDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGCTreasureDetailsViewController.swift; sourceTree = "<group>"; };
+		3E96E3192034250900EEC000 /* ARFGPRankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPRankingViewController.swift; sourceTree = "<group>"; };
+		3E96E31B2034252800EEC000 /* ARFGPRankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPRankingTableViewCell.swift; sourceTree = "<group>"; };
+		3E9BADA3202E89BF0087402A /* ARFGPGameDiscussionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPGameDiscussionViewController.swift; sourceTree = "<group>"; };
+		3E9BADA5202EBB770087402A /* ARFGPGamePlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPGamePlayViewController.swift; sourceTree = "<group>"; };
+		3E9D234420268980007539F5 /* ARFGCGameDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGCGameDetailsViewController.swift; sourceTree = "<group>"; };
+		3E9DFF4020556D3500E160AF /* ARFGPGamePauseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPGamePauseViewController.swift; sourceTree = "<group>"; };
+		3E9DFF42205580BE00E160AF /* ARFGPGameMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPGameMapViewController.swift; sourceTree = "<group>"; };
+		3E9EE7B2205163E500C7AABB /* ARFGENSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGENSplashViewController.swift; sourceTree = "<group>"; };
+		3EA2485520099FA700A124B4 /* ARFGCSetAttemptsPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGCSetAttemptsPopover.swift; sourceTree = "<group>"; };
+		3EA2485620099FA700A124B4 /* ARFGCSetAttemptsPopover.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ARFGCSetAttemptsPopover.xib; sourceTree = "<group>"; };
+		3EA248592009A00100A124B4 /* ARFGCClueCreationMultipleChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGCClueCreationMultipleChoiceViewController.swift; sourceTree = "<group>"; };
+		3EA2485B2009A05300A124B4 /* ARFGCClueCreationMultipleChoiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGCClueCreationMultipleChoiceTableViewCell.swift; sourceTree = "<group>"; };
+		3EA316C620257782007B15DB /* ARFGCGameTreasureSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGCGameTreasureSelectionViewController.swift; sourceTree = "<group>"; };
+		3EA316C8202577B5007B15DB /* ARFGCGameTreasureSelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGCGameTreasureSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		3EA316CA2025B3C1007B15DB /* ARFGCGameClueSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGCGameClueSelectionViewController.swift; sourceTree = "<group>"; };
+		3EA316CC2025B3DE007B15DB /* ARFGCGameClueSelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGCGameClueSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		3EA7FA4620325D5F00564C60 /* ARFGCGameResultClassSelectionPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGCGameResultClassSelectionPopover.swift; sourceTree = "<group>"; };
+		3EA7FA4720325D5F00564C60 /* ARFGCGameResultClassSelectionPopover.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ARFGCGameResultClassSelectionPopover.xib; sourceTree = "<group>"; };
+		3EA99600201C7E0E008D1AA1 /* ARFSandboxHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFSandboxHelper.swift; sourceTree = "<group>"; };
+		3EA99608201C8C67008D1AA1 /* ARFGCFileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGCFileViewController.swift; sourceTree = "<group>"; };
+		3EA9960A201C8CAC008D1AA1 /* ARFGCFileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGCFileTableViewCell.swift; sourceTree = "<group>"; };
+		3EA9DFDA2054AD33005E5F65 /* ARFGPGameTreasure3dViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPGameTreasure3dViewController.swift; sourceTree = "<group>"; };
+		3EAAF19A20006FDB0094EBB1 /* ARFDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ARFDataModel.xcdatamodel; sourceTree = "<group>"; };
+		3EAE0757201AFD2100C908AC /* ARFGCTreasureCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGCTreasureCreationViewController.swift; sourceTree = "<group>"; };
+		3EB1788A1FC3D21500404A89 /* ARFGAUserCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGAUserCreationViewController.swift; sourceTree = "<group>"; };
+		3EB21A3C1FA1F41400BEA172 /* ARFGENMyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGENMyAccountViewController.swift; sourceTree = "<group>"; };
+		3EB3F89B2014596600FD58A8 /* ARFGCClueDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGCClueDetailsViewController.swift; sourceTree = "<group>"; };
+		3EB8C7BD205621DD00710676 /* ARFGPGamePlayResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGPGamePlayResultViewController.swift; sourceTree = "<group>"; };
+		3EC12C142026E7ED00D339DE /* ARFGCGameClassSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGCGameClassSelectionViewController.swift; sourceTree = "<group>"; };
+		3EC12C162026E87D00D339DE /* ARFGCGameClassSelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGCGameClassSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		3EC1DBFC2057988D008EB930 /* ARFAssetCatalog.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ARFAssetCatalog.xcassets; sourceTree = "<group>"; };
+		3ECB6196205889270064F239 /* ARFChartFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFChartFormatter.swift; sourceTree = "<group>"; };
+		3ECB619820588A530064F239 /* ARFBarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFBarChart.swift; sourceTree = "<group>"; };
+		3ED126801FB53F1B007ED842 /* ARFGENPrimaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGENPrimaryViewController.swift; sourceTree = "<group>"; };
+		3EE02F5B1FD8D26900C46680 /* ARFGAClassCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGAClassCreationViewController.swift; sourceTree = "<group>"; };
+		3EE02F5D1FD8F1E400C46680 /* ARFGAClassPlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGAClassPlayerTableViewCell.swift; sourceTree = "<group>"; };
+		3EE1752A1FD799AB0075BF95 /* ARFGAClassTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGAClassTableViewCell.swift; sourceTree = "<group>"; };
+		3EECAAA61FC50913004E105B /* ARFGAUserTypePopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGAUserTypePopover.swift; sourceTree = "<group>"; };
+		3EECAAA71FC50913004E105B /* ARFGAUserTypePopover.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ARFGAUserTypePopover.xib; sourceTree = "<group>"; };
+		3EEE0B801FE90F4800D4406E /* ARFGCClueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFGCClueTableViewCell.swift; sourceTree = "<group>"; };
+		3EF4EFA41F90474700FD5DB9 /* ARFGAStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ARFGAStoryboard.storyboard; sourceTree = "<group>"; };
+		3EF4EFA61F90475900FD5DB9 /* ARFGCStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ARFGCStoryboard.storyboard; sourceTree = "<group>"; };
+		3EF4EFA81F90476800FD5DB9 /* ARFGPStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ARFGPStoryboard.storyboard; sourceTree = "<group>"; };
+		45EBB80FE0FB61B312EFABFC /* Pods_ARFollow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARFollow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B034B5FC306B645D818D79C5 /* Pods-ARFollow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARFollow.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARFollow/Pods-ARFollow.release.xcconfig"; sourceTree = "<group>"; };
+		E48D66998EBF5B7C69BD1F72 /* Pods-ARFollow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARFollow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARFollow/Pods-ARFollow.debug.xcconfig"; sourceTree = "<group>"; };
+		EF1BFEF8216F841F009FDB01 /* background_001.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = background_001.wav; sourceTree = "<group>"; };
+		EF282139216BA0BF00B54255 /* AssimpKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssimpKit.framework; path = Carthage/Build/iOS/AssimpKit.framework; sourceTree = "<group>"; };
+		EFDCD608216E364A0068945F /* wrong_001.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wrong_001.wav; sourceTree = "<group>"; };
+		EFDCD60C216E38610068945F /* correct_001.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = correct_001.wav; sourceTree = "<group>"; };
+		EFF47510216A3FA400CBD391 /* sk_0002.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = sk_0002.gif; sourceTree = "<group>"; };
+		EFF47511216A3FA800CBD391 /* sk_0001.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = sk_0001.gif; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E89A4E81F8F603800942B55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFF423AF216D06EE008C6022 /* AssimpKit.framework in Frameworks */,
+				478E04341F243B744FBC692A /* Pods_ARFollow.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EE922D7501B2D29931E346A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF282139216BA0BF00B54255 /* AssimpKit.framework */,
+				45EBB80FE0FB61B312EFABFC /* Pods_ARFollow.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E62CD5B205367F300B7185B /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				EF1BFEF8216F841F009FDB01 /* background_001.wav */,
+				EFDCD608216E364A0068945F /* wrong_001.wav */,
+				EFDCD60C216E38610068945F /* correct_001.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		3E7749312071C44D00DB1B6B /* Mechanics */ = {
+			isa = PBXGroup;
+			children = (
+				3E7749322071C4A200DB1B6B /* ARFGPMechanicsViewController.swift */,
+				3E7749342071C6B500DB1B6B /* ARFGPMechanicsPage1ViewController.swift */,
+				3E7749362071C9D400DB1B6B /* ARFGPMechanicsPage2ViewController.swift */,
+				3E7749382071C9E700DB1B6B /* ARFGPMechanicsPage3ViewController.swift */,
+				3E77493A2071C9FC00DB1B6B /* ARFGPMechanicsPage4ViewController.swift */,
+				3E77493C2071CA0C00DB1B6B /* ARFGPMechanicsPage5ViewController.swift */,
+				3E77493E2071CA1F00DB1B6B /* ARFGPMechanicsPage6ViewController.swift */,
+				3E7749402071CA2F00DB1B6B /* ARFGPMechanicsPage7ViewController.swift */,
+				3E7749422071CA3F00DB1B6B /* ARFGPMechanicsPage8ViewController.swift */,
+				3E7749442071DBE000DB1B6B /* ARFGPMechanicsPage9ViewController.swift */,
+			);
+			path = Mechanics;
+			sourceTree = "<group>";
+		};
+		3E89A4E21F8F603800942B55 = {
+			isa = PBXGroup;
+			children = (
+				3E89A4ED1F8F603800942B55 /* ARTitser */,
+				3E89A4EC1F8F603800942B55 /* Products */,
+				5F928041AB19091D6DA927BE /* Pods */,
+				0EE922D7501B2D29931E346A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3E89A4EC1F8F603800942B55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E89A4EB1F8F603800942B55 /* ARTitser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E89A4ED1F8F603800942B55 /* ARTitser */ = {
+			isa = PBXGroup;
+			children = (
+				3E89A5011F8F609500942B55 /* Models */,
+				3E89A5021F8F609A00942B55 /* Views */,
+				3E89A5031F8F609E00942B55 /* Controllers */,
+				3E89A5101F8F62A200942B55 /* Managers */,
+				3E89A5111F8F62A700942B55 /* Utilities */,
+				3E89A5001F8F604100942B55 /* Primaries */,
+				3E89A50D1F8F627900942B55 /* Assets */,
+			);
+			path = ARTitser;
+			sourceTree = "<group>";
+		};
+		3E89A5001F8F604100942B55 /* Primaries */ = {
+			isa = PBXGroup;
+			children = (
+				3E89A50B1F8F61B600942B55 /* ARFInfo.plist */,
+				3E89A4EE1F8F603800942B55 /* AppDelegate.swift */,
+				3E76179C1FEB459600D2BA98 /* Settings.bundle */,
+			);
+			path = Primaries;
+			sourceTree = "<group>";
+		};
+		3E89A5011F8F609500942B55 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3EAAF19920006FDB0094EBB1 /* ARFDataModel.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3E89A5021F8F609A00942B55 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3E89A5071F8F60E400942B55 /* ARFPrimaryStoryboard.storyboard */,
+				3E89A5091F8F612C00942B55 /* ARFSplashScreen.storyboard */,
+				3EF4EFA41F90474700FD5DB9 /* ARFGAStoryboard.storyboard */,
+				3EF4EFA61F90475900FD5DB9 /* ARFGCStoryboard.storyboard */,
+				3EF4EFA81F90476800FD5DB9 /* ARFGPStoryboard.storyboard */,
+				3EECAAA71FC50913004E105B /* ARFGAUserTypePopover.xib */,
+				3EA2485620099FA700A124B4 /* ARFGCSetAttemptsPopover.xib */,
+				3EA7FA4720325D5F00564C60 /* ARFGCGameResultClassSelectionPopover.xib */,
+				3E96240D2033C2C500CF9E0D /* ARFGENAboutPopover.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3E89A5031F8F609E00942B55 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3ED1267F1FB53EA9007ED842 /* General */,
+				3ED1267C1FB53E74007ED842 /* Administrator */,
+				3ED1267D1FB53E82007ED842 /* Creator */,
+				3ED1267E1FB53E8A007ED842 /* Player */,
+				3E7749312071C44D00DB1B6B /* Mechanics */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3E89A50D1F8F627900942B55 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3EFC346D203A99F6001B8C2D /* Catalogs */,
+				3EFC346C203A99E9001B8C2D /* Sidekicks */,
+				3E62CD5B205367F300B7185B /* Sounds */,
+				3E95AD1020504AD400D3154D /* Scenes */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		3E89A5101F8F62A200942B55 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3E89A51C1F8F644400942B55 /* ARFDataManager.swift */,
+				3E8B059920511817008BEAB5 /* ARFLocationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		3E89A5111F8F62A700942B55 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3E89A5121F8F630600942B55 /* ARFConstants.swift */,
+				3E89A5141F8F635D00942B55 /* ARFCoreDataStack.swift */,
+				3E89A5161F8F639A00942B55 /* ARFServerRequestHelper.swift */,
+				3E89A5181F8F63D400942B55 /* ARFDataParserHelper.swift */,
+				3E89A51A1F8F63F900942B55 /* ARFExtensions.swift */,
+				3EA99600201C7E0E008D1AA1 /* ARFSandboxHelper.swift */,
+				3ECB619820588A530064F239 /* ARFBarChart.swift */,
+				3ECB6196205889270064F239 /* ARFChartFormatter.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		3E95AD1020504AD400D3154D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3E44209A2050B44E008DD6DA /* ARF3dModels.scnassets */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3ED1267C1FB53E74007ED842 /* Administrator */ = {
+			isa = PBXGroup;
+			children = (
+				3E42CDAC1F9DD6E90049B5AE /* ARFGADashboardViewController.swift */,
+				3E3214311FE12242008C492A /* ARFGAActivityTableViewCell.swift */,
+				3E42CDB01F9DD7610049B5AE /* ARFGAUserViewController.swift */,
+				3E42CDB61F9DEAA10049B5AE /* ARFGAUserTableViewCell.swift */,
+				3EB1788A1FC3D21500404A89 /* ARFGAUserCreationViewController.swift */,
+				3E509D911FCFF1780076C2AF /* ARFGAUserDetailsViewController.swift */,
+				3EECAAA61FC50913004E105B /* ARFGAUserTypePopover.swift */,
+				3E42CDB21F9DD7700049B5AE /* ARFGACourseViewController.swift */,
+				3E42CDB81F9DEE750049B5AE /* ARFGACourseTableViewCell.swift */,
+				3E5891961FB1B9FF00B7A8FD /* ARFGACourseCreationViewController.swift */,
+				3E5891981FB1BA4300B7A8FD /* ARFGACourseDetailsViewController.swift */,
+				3E42CDB41F9DD77C0049B5AE /* ARFGAClassViewController.swift */,
+				3EE1752A1FD799AB0075BF95 /* ARFGAClassTableViewCell.swift */,
+				3EE02F5B1FD8D26900C46680 /* ARFGAClassCreationViewController.swift */,
+				3EE02F5D1FD8F1E400C46680 /* ARFGAClassPlayerTableViewCell.swift */,
+				3E01D2221FDA250E0029422C /* ARFGAClassUserSelectionViewController.swift */,
+				3E01D2241FDA315B0029422C /* ARFGAClassUserSelectionTableViewCell.swift */,
+				3E53208E1FDE752900A6D74E /* ARFGAClassCourseSelectionViewController.swift */,
+				3E5320901FDE83F700A6D74E /* ARFGAClassCourseSelectionTableViewCell.swift */,
+				3E32142F1FE0CD88008C492A /* ARFGAClassDetailsViewController.swift */,
+			);
+			path = Administrator;
+			sourceTree = "<group>";
+		};
+		3ED1267D1FB53E82007ED842 /* Creator */ = {
+			isa = PBXGroup;
+			children = (
+				3E61183C1FE22CDD0004272F /* ARFGCDashboardViewController.swift */,
+				3E36D5F31FE7646200D9E1D2 /* ARFGCClueViewController.swift */,
+				3EEE0B801FE90F4800D4406E /* ARFGCClueTableViewCell.swift */,
+				3E76179E1FEB7EE900D2BA98 /* ARFGCClueTypeSelectionViewController.swift */,
+				3E7617A01FEB7F1900D2BA98 /* ARFGCClueTypeSelectionTableViewCell.swift */,
+				3EA248592009A00100A124B4 /* ARFGCClueCreationMultipleChoiceViewController.swift */,
+				3EA2485B2009A05300A124B4 /* ARFGCClueCreationMultipleChoiceTableViewCell.swift */,
+				3EA2485520099FA700A124B4 /* ARFGCSetAttemptsPopover.swift */,
+				3EB3F89B2014596600FD58A8 /* ARFGCClueDetailsViewController.swift */,
+				3E36D5F51FE7647000D9E1D2 /* ARFGCTreasureViewController.swift */,
+				3E08EF622019B7E7008C1169 /* ARFGCTreasureTableViewCell.swift */,
+				3EAE0757201AFD2100C908AC /* ARFGCTreasureCreationViewController.swift */,
+				3EA99608201C8C67008D1AA1 /* ARFGCFileViewController.swift */,
+				3EA9960A201C8CAC008D1AA1 /* ARFGCFileTableViewCell.swift */,
+				3E966219201D7C7E002459FF /* ARFGCTreasureDetailsViewController.swift */,
+				3E36D5F71FE7647C00D9E1D2 /* ARFGCGameViewController.swift */,
+				3E5DE307201EC4570041593A /* ARFGCGameTableViewCell.swift */,
+				3E5DE309201F15DB0041593A /* ARFGCGameCreationViewController.swift */,
+				3E6304B420202069005619AE /* ARFGCGameClueTableViewCell.swift */,
+				3EA316C620257782007B15DB /* ARFGCGameTreasureSelectionViewController.swift */,
+				3EA316C8202577B5007B15DB /* ARFGCGameTreasureSelectionTableViewCell.swift */,
+				3EA316CA2025B3C1007B15DB /* ARFGCGameClueSelectionViewController.swift */,
+				3EA316CC2025B3DE007B15DB /* ARFGCGameClueSelectionTableViewCell.swift */,
+				3E9D234420268980007539F5 /* ARFGCGameDetailsViewController.swift */,
+				3EC12C142026E7ED00D339DE /* ARFGCGameClassSelectionViewController.swift */,
+				3EC12C162026E87D00D339DE /* ARFGCGameClassSelectionTableViewCell.swift */,
+				3E93150C20319FD700814C36 /* ARFGCGameResultViewController.swift */,
+				3EA7FA4620325D5F00564C60 /* ARFGCGameResultClassSelectionPopover.swift */,
+			);
+			path = Creator;
+			sourceTree = "<group>";
+		};
+		3ED1267E1FB53E8A007ED842 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				3E92489F2029710B007F3E1B /* ARFGPClassViewController.swift */,
+				3E7522CC202AE24700D99BDE /* ARFGPClassCollectionViewCell.swift */,
+				3E7522C6202ACE9900D99BDE /* ARFGPClassDetailsViewController.swift */,
+				3E7522C8202AD59200D99BDE /* ARFGPGameViewController.swift */,
+				3E7522CE202AE62D00D99BDE /* ARFGPGameCollectionViewCell.swift */,
+				3E9BADA3202E89BF0087402A /* ARFGPGameDiscussionViewController.swift */,
+				3E9BADA5202EBB770087402A /* ARFGPGamePlayViewController.swift */,
+				3EB8C7BD205621DD00710676 /* ARFGPGamePlayResultViewController.swift */,
+				3E62CD6E2053A6EF00B7185B /* ARFGPGameClueViewController.swift */,
+				3E62CD742053B11200B7185B /* ARFGPGameClueChoiceTableViewCell.swift */,
+				3E62CD7620541EB300B7185B /* ARFGPGameTreasureViewController.swift */,
+				3EA9DFDA2054AD33005E5F65 /* ARFGPGameTreasure3dViewController.swift */,
+				3E9DFF42205580BE00E160AF /* ARFGPGameMapViewController.swift */,
+				3E9DFF4020556D3500E160AF /* ARFGPGamePauseViewController.swift */,
+				3E92489920296F5B007F3E1B /* ARFGPSidekickSelectionViewController.swift */,
+				3E92489B20296FAC007F3E1B /* ARFGPSidekickNamingViewController.swift */,
+				3E92489D20296FF5007F3E1B /* ARFGPSidekickWelcomeViewController.swift */,
+				3E9624102033CEF200CF9E0D /* ARFGPSidekickDetailsViewController.swift */,
+				3E9624122034054600CF9E0D /* ARFGPTreasureViewController.swift */,
+				3E9624142034056500CF9E0D /* ARFGPTreasureCollectionViewCell.swift */,
+				3E079F78205002A1000843A0 /* ARFGPTreasure3DViewController.swift */,
+				3E96E3192034250900EEC000 /* ARFGPRankingViewController.swift */,
+				3E96E31B2034252800EEC000 /* ARFGPRankingTableViewCell.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		3ED1267F1FB53EA9007ED842 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				3E9EE7B2205163E500C7AABB /* ARFGENSplashViewController.swift */,
+				3ED126801FB53F1B007ED842 /* ARFGENPrimaryViewController.swift */,
+				3EB21A3C1FA1F41400BEA172 /* ARFGENMyAccountViewController.swift */,
+				3E96240C2033C2C500CF9E0D /* ARFGENAboutPopover.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		3EFC346C203A99E9001B8C2D /* Sidekicks */ = {
+			isa = PBXGroup;
+			children = (
+				EFF47511216A3FA800CBD391 /* sk_0001.gif */,
+				EFF47510216A3FA400CBD391 /* sk_0002.gif */,
+			);
+			path = Sidekicks;
+			sourceTree = "<group>";
+		};
+		3EFC346D203A99F6001B8C2D /* Catalogs */ = {
+			isa = PBXGroup;
+			children = (
+				3EC1DBFC2057988D008EB930 /* ARFAssetCatalog.xcassets */,
+			);
+			path = Catalogs;
+			sourceTree = "<group>";
+		};
+		5F928041AB19091D6DA927BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E48D66998EBF5B7C69BD1F72 /* Pods-ARFollow.debug.xcconfig */,
+				B034B5FC306B645D818D79C5 /* Pods-ARFollow.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E89A4EA1F8F603800942B55 /* ARTitser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E89A4FD1F8F603800942B55 /* Build configuration list for PBXNativeTarget "ARTitser" */;
+			buildPhases = (
+				4F6D1990FED6CB30D7011F51 /* [CP] Check Pods Manifest.lock */,
+				3E89A4E71F8F603800942B55 /* Sources */,
+				3E89A4E81F8F603800942B55 /* Frameworks */,
+				3E89A4E91F8F603800942B55 /* Resources */,
+				8974D21B7ACCFE80311E7FEB /* [CP] Embed Pods Frameworks */,
+				E43439AF81E99F1039B7A1AC /* [CP] Copy Pods Resources */,
+				EF28213B216BA0E100B54255 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARTitser;
+			productName = ARFollow;
+			productReference = 3E89A4EB1F8F603800942B55 /* ARTitser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E89A4E31F8F603800942B55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = exZeptional;
+				TargetAttributes = {
+					3E89A4EA1F8F603800942B55 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3E89A4E61F8F603800942B55 /* Build configuration list for PBXProject "ARTitser" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E89A4E21F8F603800942B55;
+			productRefGroup = 3E89A4EC1F8F603800942B55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E89A4EA1F8F603800942B55 /* ARTitser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E89A4E91F8F603800942B55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E76179D1FEB459600D2BA98 /* Settings.bundle in Resources */,
+				3EF4EFA71F90475900FD5DB9 /* ARFGCStoryboard.storyboard in Resources */,
+				3E89A5081F8F60E400942B55 /* ARFPrimaryStoryboard.storyboard in Resources */,
+				3EF4EFA91F90476800FD5DB9 /* ARFGPStoryboard.storyboard in Resources */,
+				EFF47513216A3FAC00CBD391 /* sk_0001.gif in Resources */,
+				EFDCD60A216E364B0068945F /* wrong_001.wav in Resources */,
+				3EA2485820099FA700A124B4 /* ARFGCSetAttemptsPopover.xib in Resources */,
+				EF1BFEF9216F841F009FDB01 /* background_001.wav in Resources */,
+				3EA7FA4920325D5F00564C60 /* ARFGCGameResultClassSelectionPopover.xib in Resources */,
+				3E96240F2033C2C500CF9E0D /* ARFGENAboutPopover.xib in Resources */,
+				3E89A50A1F8F612C00942B55 /* ARFSplashScreen.storyboard in Resources */,
+				EFDCD60D216E38610068945F /* correct_001.wav in Resources */,
+				3EECAAA91FC50913004E105B /* ARFGAUserTypePopover.xib in Resources */,
+				3EF4EFA51F90474700FD5DB9 /* ARFGAStoryboard.storyboard in Resources */,
+				3EC1DBFD2057988D008EB930 /* ARFAssetCatalog.xcassets in Resources */,
+				3E44209B2050B44E008DD6DA /* ARF3dModels.scnassets in Resources */,
+				EFF47512216A3FAC00CBD391 /* sk_0002.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F6D1990FED6CB30D7011F51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARFollow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8974D21B7ACCFE80311E7FEB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ARFollow/Pods-ARFollow-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ARCL/ARCL.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/ChartsRealm/ChartsRealm.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/DatePickerDialog/DatePickerDialog.framework",
+				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
+				"${BUILT_PRODUCTS_DIR}/Nuke-FLAnimatedImage-Plugin/NukeFLAnimatedImagePlugin.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ARCL.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChartsRealm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DatePickerDialog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NukeFLAnimatedImagePlugin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARFollow/Pods-ARFollow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E43439AF81E99F1039B7A1AC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ARFollow/Pods-ARFollow-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARFollow/Pods-ARFollow-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF28213B216BA0E100B54255 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/AssimpKit.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E89A4E71F8F603800942B55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EE1752B1FD799AB0075BF95 /* ARFGAClassTableViewCell.swift in Sources */,
+				3E9BADA4202E89BF0087402A /* ARFGPGameDiscussionViewController.swift in Sources */,
+				3EAAF19B20006FDB0094EBB1 /* ARFDataModel.xcdatamodeld in Sources */,
+				3EEE0B811FE90F4800D4406E /* ARFGCClueTableViewCell.swift in Sources */,
+				3E42CDB71F9DEAA10049B5AE /* ARFGAUserTableViewCell.swift in Sources */,
+				3EB1788B1FC3D21500404A89 /* ARFGAUserCreationViewController.swift in Sources */,
+				3EA99601201C7E0E008D1AA1 /* ARFSandboxHelper.swift in Sources */,
+				3E9248A02029710B007F3E1B /* ARFGPClassViewController.swift in Sources */,
+				3E7617A11FEB7F1900D2BA98 /* ARFGCClueTypeSelectionTableViewCell.swift in Sources */,
+				3E7749412071CA2F00DB1B6B /* ARFGPMechanicsPage7ViewController.swift in Sources */,
+				3E5DE308201EC4570041593A /* ARFGCGameTableViewCell.swift in Sources */,
+				3E92489A20296F5B007F3E1B /* ARFGPSidekickSelectionViewController.swift in Sources */,
+				3E96621A201D7C7F002459FF /* ARFGCTreasureDetailsViewController.swift in Sources */,
+				3E36D5F41FE7646200D9E1D2 /* ARFGCClueViewController.swift in Sources */,
+				3EB21A3D1FA1F41400BEA172 /* ARFGENMyAccountViewController.swift in Sources */,
+				3E89A4EF1F8F603800942B55 /* AppDelegate.swift in Sources */,
+				3E77493F2071CA1F00DB1B6B /* ARFGPMechanicsPage6ViewController.swift in Sources */,
+				3E61183D1FE22CDD0004272F /* ARFGCDashboardViewController.swift in Sources */,
+				3EA9960B201C8CAC008D1AA1 /* ARFGCFileTableViewCell.swift in Sources */,
+				3EA316C720257782007B15DB /* ARFGCGameTreasureSelectionViewController.swift in Sources */,
+				3E76179F1FEB7EE900D2BA98 /* ARFGCClueTypeSelectionViewController.swift in Sources */,
+				3E89A5131F8F630600942B55 /* ARFConstants.swift in Sources */,
+				3E9DFF43205580BE00E160AF /* ARFGPGameMapViewController.swift in Sources */,
+				3E62CD7720541EB300B7185B /* ARFGPGameTreasureViewController.swift in Sources */,
+				3E42CDB51F9DD77C0049B5AE /* ARFGAClassViewController.swift in Sources */,
+				3E92489E20296FF5007F3E1B /* ARFGPSidekickWelcomeViewController.swift in Sources */,
+				3E9EE7B3205163E500C7AABB /* ARFGENSplashViewController.swift in Sources */,
+				3E01D2251FDA315B0029422C /* ARFGAClassUserSelectionTableViewCell.swift in Sources */,
+				3E7749392071C9E700DB1B6B /* ARFGPMechanicsPage3ViewController.swift in Sources */,
+				3EA2485C2009A05300A124B4 /* ARFGCClueCreationMultipleChoiceTableViewCell.swift in Sources */,
+				3E3214301FE0CD88008C492A /* ARFGAClassDetailsViewController.swift in Sources */,
+				3E89A51B1F8F63F900942B55 /* ARFExtensions.swift in Sources */,
+				3E42CDAD1F9DD6E90049B5AE /* ARFGADashboardViewController.swift in Sources */,
+				3E53208F1FDE752900A6D74E /* ARFGAClassCourseSelectionViewController.swift in Sources */,
+				3E96240E2033C2C500CF9E0D /* ARFGENAboutPopover.swift in Sources */,
+				3EA2485A2009A00100A124B4 /* ARFGCClueCreationMultipleChoiceViewController.swift in Sources */,
+				3E7749452071DBE000DB1B6B /* ARFGPMechanicsPage9ViewController.swift in Sources */,
+				3EA7FA4820325D5F00564C60 /* ARFGCGameResultClassSelectionPopover.swift in Sources */,
+				3ED126811FB53F1B007ED842 /* ARFGENPrimaryViewController.swift in Sources */,
+				3E7749332071C4A200DB1B6B /* ARFGPMechanicsViewController.swift in Sources */,
+				3E7522CF202AE62D00D99BDE /* ARFGPGameCollectionViewCell.swift in Sources */,
+				3E62CD702053A6EF00B7185B /* ARFGPGameClueViewController.swift in Sources */,
+				3EB8C7BE205621DD00710676 /* ARFGPGamePlayResultViewController.swift in Sources */,
+				3EA2485720099FA700A124B4 /* ARFGCSetAttemptsPopover.swift in Sources */,
+				3E96E31A2034250900EEC000 /* ARFGPRankingViewController.swift in Sources */,
+				3E9624132034054600CF9E0D /* ARFGPTreasureViewController.swift in Sources */,
+				3E6304B520202069005619AE /* ARFGCGameClueTableViewCell.swift in Sources */,
+				3E36D5F81FE7647C00D9E1D2 /* ARFGCGameViewController.swift in Sources */,
+				3E7522C9202AD59200D99BDE /* ARFGPGameViewController.swift in Sources */,
+				3E079F79205002A1000843A0 /* ARFGPTreasure3DViewController.swift in Sources */,
+				3E42CDB11F9DD7610049B5AE /* ARFGAUserViewController.swift in Sources */,
+				3EE02F5C1FD8D26900C46680 /* ARFGAClassCreationViewController.swift in Sources */,
+				3E93150D20319FD700814C36 /* ARFGCGameResultViewController.swift in Sources */,
+				3E3214321FE12242008C492A /* ARFGAActivityTableViewCell.swift in Sources */,
+				3EE02F5E1FD8F1E400C46680 /* ARFGAClassPlayerTableViewCell.swift in Sources */,
+				3EC12C172026E87D00D339DE /* ARFGCGameClassSelectionTableViewCell.swift in Sources */,
+				3E9BADA6202EBB770087402A /* ARFGPGamePlayViewController.swift in Sources */,
+				3EAE0758201AFD2100C908AC /* ARFGCTreasureCreationViewController.swift in Sources */,
+				3E77493D2071CA0C00DB1B6B /* ARFGPMechanicsPage5ViewController.swift in Sources */,
+				3ECB619920588A530064F239 /* ARFBarChart.swift in Sources */,
+				3E9D234520268980007539F5 /* ARFGCGameDetailsViewController.swift in Sources */,
+				3E92489C20296FAC007F3E1B /* ARFGPSidekickNamingViewController.swift in Sources */,
+				3E7749372071C9D400DB1B6B /* ARFGPMechanicsPage2ViewController.swift in Sources */,
+				3E42CDB31F9DD7700049B5AE /* ARFGACourseViewController.swift in Sources */,
+				3E5891971FB1BA0000B7A8FD /* ARFGACourseCreationViewController.swift in Sources */,
+				3EA316CB2025B3C1007B15DB /* ARFGCGameClueSelectionViewController.swift in Sources */,
+				3E96E31C2034252800EEC000 /* ARFGPRankingTableViewCell.swift in Sources */,
+				3EC12C152026E7ED00D339DE /* ARFGCGameClassSelectionViewController.swift in Sources */,
+				3E509D921FCFF1780076C2AF /* ARFGAUserDetailsViewController.swift in Sources */,
+				3E89A5151F8F635D00942B55 /* ARFCoreDataStack.swift in Sources */,
+				3E89A51D1F8F644400942B55 /* ARFDataManager.swift in Sources */,
+				3E9DFF4120556D3500E160AF /* ARFGPGamePauseViewController.swift in Sources */,
+				3E5891991FB1BA4300B7A8FD /* ARFGACourseDetailsViewController.swift in Sources */,
+				3E5DE30A201F15DB0041593A /* ARFGCGameCreationViewController.swift in Sources */,
+				3E7522CD202AE24700D99BDE /* ARFGPClassCollectionViewCell.swift in Sources */,
+				3ECB6197205889270064F239 /* ARFChartFormatter.swift in Sources */,
+				3EA316C9202577B5007B15DB /* ARFGCGameTreasureSelectionTableViewCell.swift in Sources */,
+				3E42CDB91F9DEE750049B5AE /* ARFGACourseTableViewCell.swift in Sources */,
+				3E7749352071C6B500DB1B6B /* ARFGPMechanicsPage1ViewController.swift in Sources */,
+				3E9624112033CEF200CF9E0D /* ARFGPSidekickDetailsViewController.swift in Sources */,
+				3E89A5191F8F63D400942B55 /* ARFDataParserHelper.swift in Sources */,
+				3E77493B2071C9FC00DB1B6B /* ARFGPMechanicsPage4ViewController.swift in Sources */,
+				3E7749432071CA3F00DB1B6B /* ARFGPMechanicsPage8ViewController.swift in Sources */,
+				3EA316CD2025B3DE007B15DB /* ARFGCGameClueSelectionTableViewCell.swift in Sources */,
+				3EB3F89C2014596600FD58A8 /* ARFGCClueDetailsViewController.swift in Sources */,
+				3E08EF632019B7E7008C1169 /* ARFGCTreasureTableViewCell.swift in Sources */,
+				3E5320911FDE83F700A6D74E /* ARFGAClassCourseSelectionTableViewCell.swift in Sources */,
+				3E7522C7202ACE9900D99BDE /* ARFGPClassDetailsViewController.swift in Sources */,
+				3EA9DFDB2054AD33005E5F65 /* ARFGPGameTreasure3dViewController.swift in Sources */,
+				3E9624152034056500CF9E0D /* ARFGPTreasureCollectionViewCell.swift in Sources */,
+				3EA99609201C8C67008D1AA1 /* ARFGCFileViewController.swift in Sources */,
+				3E8B059A20511817008BEAB5 /* ARFLocationManager.swift in Sources */,
+				3EECAAA81FC50913004E105B /* ARFGAUserTypePopover.swift in Sources */,
+				3E36D5F61FE7647000D9E1D2 /* ARFGCTreasureViewController.swift in Sources */,
+				3E62CD752053B11200B7185B /* ARFGPGameClueChoiceTableViewCell.swift in Sources */,
+				3E01D2231FDA250E0029422C /* ARFGAClassUserSelectionViewController.swift in Sources */,
+				3E89A5171F8F639A00942B55 /* ARFServerRequestHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3E89A4FB1F8F603800942B55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3E89A4FC1F8F603800942B55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E89A4FE1F8F603800942B55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E48D66998EBF5B7C69BD1F72 /* Pods-ARFollow.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = icnAppPrimary;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EA8W3D4GRB;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/ARTitser/Primaries/ARFInfo.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eXzeptional.ARTitser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3E89A4FF1F8F603800942B55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B034B5FC306B645D818D79C5 /* Pods-ARFollow.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = icnAppPrimary;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EA8W3D4GRB;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/ARTitser/Primaries/ARFInfo.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eXzeptional.ARTitser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E89A4E61F8F603800942B55 /* Build configuration list for PBXProject "ARTitser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E89A4FB1F8F603800942B55 /* Debug */,
+				3E89A4FC1F8F603800942B55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E89A4FD1F8F603800942B55 /* Build configuration list for PBXNativeTarget "ARTitser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E89A4FE1F8F603800942B55 /* Debug */,
+				3E89A4FF1F8F603800942B55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3EAAF19920006FDB0094EBB1 /* ARFDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3EAAF19A20006FDB0094EBB1 /* ARFDataModel.xcdatamodel */,
+			);
+			currentVersion = 3EAAF19A20006FDB0094EBB1 /* ARFDataModel.xcdatamodel */;
+			path = ARFDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3E89A4E31F8F603800942B55 /* Project object */;
+}
